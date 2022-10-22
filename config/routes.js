@@ -19,3 +19,5 @@ module.exports = (app) => {
     app.get('/home', controllers.home)
     app.get('*', controllers.Error) //404 page
 }
+
+///hello these are my routes
