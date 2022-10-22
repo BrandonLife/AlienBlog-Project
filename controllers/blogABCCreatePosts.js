@@ -35,6 +35,7 @@ module.exports = {
 
 }
 
+///this is a comment, used for uploading to Github
 // let newPost = new Post(
 //     uniqid(),
 //     body.name,
