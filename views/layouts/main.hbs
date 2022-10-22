@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/blogABC.css">
+    <title>Alien blog</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>A.B.C: Alien Bloggers Community </h2>
+        <!--add alien image in title -->
+    </div>
+    <ul>
+        {{#if loggedIn}}
+        <li><a href="/about">About</a></li>
+        <li><a href="/blogABCPosts">Browse</a></li>
+        <li><a href="/blogABCCreatePosts">Add a Post</a></li>
+        <li><a href="/profile/logout">Logout</a></li>
+        {{else}}
+        <li><a href="/profile/login">Login</a></li>
+        <li><a href="/profile/register">Register</a></li>
+        {{/if}}
+    </ul>
+    {{{body}}}
+
+</body>
+<div class="footer">
+    <h2>ABC: Module 5 project x B. Life & A. Williams</h2>
+</div>
+
+</html>

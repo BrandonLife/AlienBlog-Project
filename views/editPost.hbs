@@ -1,0 +1,15 @@
+<h1>Edit Post</h1>
+<div>
+    <form action='/edit/Post/{{_id}}' method="Post">
+        <label for="name" id="nameLabel">Name</label><br>
+        <input type="text" id="postName" name="name" value="{{name}}">
+        <hr>
+        <label for="comments" id="commentsLabel">Comments</label><br>
+        <textarea name="comments" id="commentsArea" cols="60" rows="10">{{comments}}</textarea>
+        <hr>
+        <label for="imageURL" id="imageURLLabel">imageURL</label><br>
+        <input name="imageURL" id="imageURLArea" value="{{imageURL}}"></input>
+        <hr>
+        <button id="PostButton" type="submit" value="Edit">Edit</button>
+    </form>
+</div>

@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="leftcolumn">
+        {{#each posts}}
+        <div class="card">
+            <h2 class="name">{{name}}</h2>
+            <!-- Name goes here but has to be dynamic. For example. It should say ${Ashley} posted or wrote etc-->
+            <div class="fakeimg" style="height:200px;">{{imageURL}}</div>
+            <!--Like the image. For now lets just keep-->
+            <p class="text">{{comments}}</p>
+            <!--So this is where the text of the post will go-->
+            <!--So all of this is good. When they click the button a post is created dynamically using javascript. The post however has to be created and sent to a database that way we can create, read, update, delete-->
+            <a class="btn" href="/edit/Post/{{_id}}">Edit</a>
+            <a class="btn" href="/delete/Post/{{_id}}">Delete</a>
+        </div>
+        {{else}}
+        <div class="card">
+            <h2 class="name">No posts were found</h2>
+            <!-- Name goes here but has to be dynamic. For example. It should say ${Ashley} posted or wrote etc-->
+            <p>Add Post here</p>
+            <a class="btn" href="/blogABCCreatePosts">New Post</a>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</div>
